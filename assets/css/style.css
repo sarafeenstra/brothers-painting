@@ -4,6 +4,8 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 * central blue color: #5f8195
+* Lighter blue: #819bab
+* Navbar background color: #d0d9e0
 */
 
 /*--------------------------------------------------------------
@@ -343,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #fff;
+  color: #819bab;
 }
 
 .mobile-nav {
@@ -378,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #e82d2d;
+  color: #506e80;
   text-decoration: none;
 }
 
@@ -437,7 +439,6 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #logo-big-box {
-  margin-top: 120px;
   margin-bottom: 20px;
   position: relative;
 }
