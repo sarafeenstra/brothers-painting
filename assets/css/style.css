@@ -439,15 +439,7 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #logo-big-box {
-  margin-bottom: 20px;
   position: relative;
-}
-
-#free-estimate-btn {
-  position: absolute;
-  margin-top: 25px;
-  border: 2px solid #819bab;
-  max-width: fit-content;
 }
 
 #logo-big-hero {
@@ -478,6 +470,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #logo-big-box .btn-get-started {
+  position: absolute;
+  border: 2px solid #819bab;
+  max-width: fit-content;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -486,13 +481,13 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   padding: 10px 28px;
   transition: 0.5s;
-  border: 2px solid #fff;
   color: black;
 }
 
 #logo-big-box .btn-get-started:hover {
-  background: #cc1616;
-  border-color: #cc1616;
+  background: #819bab;
+  border-color: #819bab;
+  color: #fff;
 }
 
 @media (min-width: 1024px) {
