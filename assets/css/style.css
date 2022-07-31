@@ -13,7 +13,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #ffffff;
 }
 
 a {
@@ -119,10 +119,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
-#topbar {
+/* #topbar {
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -166,24 +166,23 @@ h1, h2, h3, h4, h5, h6 {
 
 #topbar .social-links a:first-child {
   border-left: 0;
-}
+} */
 
 /*--------------------------------------------------------------
-# Header
+# Nav-bar
 --------------------------------------------------------------*/
-#header {
+#nav-bar {
   background: #5f8195;
   transition: all 0.5s;
   z-index: 997;
-  top: 40px;
 }
 
-#header.header-scrolled {
+#nav-bar.header-scrolled {
   top: 0;
   background: #fff(0, 0, 0, 0.9);
 }
 
-#header .logo {
+#nav-bar .logo {
   font-size: 32px;
   margin: 0;
   padding: 0;
@@ -193,21 +192,21 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-#header .logo a {
+#nav-bar .logo a {
   color: #fff;
 }
 
-#header .logo img {
+#nav-bar .logo img {
   max-height: 40px;
 }
 
 @media (max-width: 992px) {
-  #header {
+  #nav-bar {
     top: 0;
     padding: 15px 0;
     background: transparent;
   }
-  #header .logo {
+  #nav-bar .logo {
     font-size: 28px;
   }
 }
@@ -442,18 +441,18 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero-container {
-  width: 100%;
-  background: url(/assets/img/pexels-kaboompics-com-6368.jpg);
+#hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/img/pexels-kaboompics-com-6368.jpg);
   background-size: cover;
-  position: relative;
+  background-position: center;
+  height: 100vh;
 }
 
 #logo-big-box {
   position: relative;
   background-size: cover;
   background-position: center;
-  height: 70vh;
+  height: 100vh;
   background-attachment: fixed;
   
 }
@@ -463,7 +462,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 30px;
 }
 
-#hero:before {
+#hero-unknown:before {
   content: "";
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -473,13 +472,13 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
 }
 
-#hero .container {
-  padding-top: 70px;
+#hero-unknown .container {
+  padding-top: 1px;
 }
 
-#logo-big-box .btn-get-started {
+#logo-big-box .btn-free-estimate {
   position: absolute;
-  border: 2px solid #819bab;
+  border: 2px solid white;
   max-width: fit-content;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -490,12 +489,17 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 28px;
   transition: 0.5s;
   color: black;
+  background: white;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
-#logo-big-box .btn-get-started:hover {
+#logo-big-box .btn-free-estimate:hover {
   background: #819bab;
   border-color: #819bab;
-  color: #fff;
+  color: white;
 }
 
 @media (min-width: 1024px) {
