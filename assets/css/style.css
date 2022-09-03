@@ -701,7 +701,38 @@ section {
 
 #individual-services-card {
   width: 18rem;
+  margin-bottom: 20px;
 }
+
+@media (min-width: 992px) {
+  #card-interior-parent {
+    margin-bottom: 25px;
+  }
+}
+
+#detailed-doc {
+  color: #0c0c0c;
+  margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .individual-services-card-interior {
+    margin-bottom: 24px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Transition to About
+--------------------------------------------------------------*/
+
+hr.solid {
+  border-top: 3px solid #5f8195;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+}
+
 
 /* .services .icon-box {
   text-align: center;

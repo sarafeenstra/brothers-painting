@@ -122,7 +122,7 @@
           <div class="col-6">
             <div class="d-flex justify-content-evenly">
               <div class="card card-parent">
-                <div class="card-body">
+                <div class="card-body" id="card-interior-parent">
                   <h5 class="card-title">Interior</h5>
                   <p class="card-text">We offer a wide variety of services for interior painting, 
                     including: ceilings, trim, walls, cabinetry and hearths. 
@@ -133,8 +133,8 @@
             </div>
 
             <!-- Interior Services -->
-            <div class="row">
               <!-- Ceilings -->
+            <div class="row d-flex justify-content-evenly individual-services-card-interior">
               <div class="card" id="individual-services-card">
                 <div class="card-body">
                   <h5 class="card-title">Ceilings</h5>
@@ -148,6 +148,9 @@
                   <p class="card-text">We luv trim.</p>
                 </div>
               </div>
+            </div>
+
+            <div class="row d-flex justify-content-evenly individual-services-card-interior">
               <!-- Walls -->
               <div class="card" id="individual-services-card">
                 <div class="card-body">
@@ -162,6 +165,9 @@
                   <p class="card-text">Cabinetry are cool.</p>
                 </div>
               </div>
+            </div>
+
+            <div class="row d-flex justify-content-evenly">
               <!-- Hearths -->
               <div class="card" id="individual-services-card">
                 <div class="card-body">
@@ -194,7 +200,7 @@
             </div>
 
             <!-- Exterior Services -->
-            <div class="row d-flex">
+            <div class="row d-flex justify-content-evenly">
               <!-- Pressure Washing -->
               <div class="card" id="individual-services-card">
                 <div class="card-body">
@@ -209,6 +215,9 @@
                   <p class="card-text">We paint exteriors.</p>
                 </div>
               </div>
+            </div>
+
+            <div class="row d-flex justify-content-evenly">
               <!-- Wood rot -->
               <div class="card" id="individual-services-card">
                 <div class="card-body">
@@ -223,6 +232,9 @@
                   <p class="card-text">Deck 'm and patio 'm</p>
                 </div>
               </div>
+            </div>
+
+            <div class="row d-flex justify-content-evenly">
               <!-- Fencing -->
               <div class="card" id="individual-services-card">
                 <div class="card-body">
@@ -241,10 +253,21 @@
           </div>
         </div>
       </div>
+
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <h4 id="detailed-doc">
+            For a detailed description of the scope of work, check out this <a href="">document.</a>
+          </h4>
+        </div>
+      </div>
     </section>
     
     <!-- End Services Section -->
 
+    <div class="justify-content-evenly">
+      <hr class="solid">
+    </div>
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
