@@ -583,6 +583,20 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+#about {
+  color: #0c0c0c;
+}
+
+#about-title {
+  margin-bottom: 5px;
+}
+
+.about-paragraph {
+  column-count: 2;
+  column-gap: 30px;
+  text-align: justify;
+}
+
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
