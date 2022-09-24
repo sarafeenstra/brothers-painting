@@ -194,5 +194,12 @@
     aos_init();
   });
 
+  // Before and after slider
+
+  const slidercontainer = document.querySelector('.slidercontainer');
+
+  document.querySelector('.slider').addEventListener('input', (e) => {
+    slidercontainer.style.setProperty('--position', `${e.target.value}%`)
+  })
 
 })(jQuery);
