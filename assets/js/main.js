@@ -196,10 +196,16 @@
 
   // Before and after slider
 
-  const slidercontainer = document.querySelector('.slidercontainer');
+  const sliderContainer1 = document.querySelector('.slidercontainer-1');
 
-  document.querySelector('.slider').addEventListener('input', (e) => {
-    slidercontainer.style.setProperty('--position', `${e.target.value}%`)
+  document.querySelector('.slider-1').addEventListener('input', (e) => {
+    sliderContainer1.style.setProperty('--position', `${e.target.value}%`)
+  })
+
+  const sliderContainer2 = document.querySelector('.slidercontainer-2');
+
+  document.querySelector('.slider-2').addEventListener('input', (e) => {
+    sliderContainer2.style.setProperty('--position', `${e.target.value}%`)
   })
 
 })(jQuery);
