@@ -678,6 +678,22 @@ hr.solid {
 # Meet the team
 --------------------------------------------------------------*/
 
+.team-photo {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.team-bio {
+  color: #0c0c0c;
+  align-items: center;
+  font-size: larger;
+}
+
 /*--------------------------------------------------------------
 # Our work
 --------------------------------------------------------------*/
