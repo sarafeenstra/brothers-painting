@@ -6,6 +6,7 @@
 * central blue color: #5f8195
 * Lighter blue: #819bab
 * Navbar background color: #d0d9e0
+* Span color/Hover nav bar: #d0d9e08b
 */
 
 /*--------------------------------------------------------------
@@ -677,6 +678,66 @@ hr.solid {
 /*--------------------------------------------------------------
 # Meet the team
 --------------------------------------------------------------*/
+#team-row {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.team-row1 {
+  background-color: #f8fafb;
+}
+
+.team-divider-row1 {
+  max-height: 10px;
+}
+
+@media (max-width: 768px) {
+  .team-row1 {
+    flex-direction: column;  
+  }
+}
+
+.team-row2 {
+  background-color: #d9e2e7;
+}
+
+.team-divider-row2 {
+  max-height: 10px;
+}
+
+@media (max-width: 768px) {
+  .team-row2 {
+    flex-direction: reverse;  
+  }
+}
+
+.team-row3 {
+  background-color: #bacad3;
+}
+
+.team-divider-row3 {
+  max-height: 10px;
+}
+
+.team-row4 {
+  background-color: #9bb2bf;
+}
+
+.team-divider-row4 {
+  max-height: 10px;
+}
+
+.team-row5 {
+  background-color: #7c9aab;
+}
+
+.team-divider-row5 {
+  max-height: 10px;
+}
+
+.team-container {
+  max-width: 1000px;
+}
 
 .team-photo {
   width: 175px;
