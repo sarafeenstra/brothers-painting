@@ -18,36 +18,36 @@
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 1;
-  $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      if (target.length) {
-        e.preventDefault();
+  // $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
+  //   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+  //     var target = $(this.hash);
+  //     if (target.length) {
+  //       e.preventDefault();
 
-        var scrollto = target.offset().top - scrolltoOffset;
+  //       var scrollto = target.offset().top - scrolltoOffset;
 
-        if ($(this).attr("href") == '#header') {
-          scrollto = 0;
-        }
+  //       if ($(this).attr("href") == '#header') {
+  //         scrollto = 0;
+  //       }
 
-        $('html, body').animate({
-          scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
+  //       $('html, body').animate({
+  //         scrollTop: scrollto
+  //       }, 1500, 'easeInOutExpo');
 
-        if ($(this).parents('.nav-menu, .mobile-nav').length) {
-          $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-          $(this).closest('li').addClass('active');
-        }
+  //       if ($(this).parents('.nav-menu, .mobile-nav').length) {
+  //         $('.nav-menu .active, .mobile-nav .active').removeClass('active');
+  //         $(this).closest('li').addClass('active');
+  //       }
 
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-          $('.mobile-nav-overly').fadeOut();
-        }
-        return false;
-      }
-    }
-  });
+  //       if ($('body').hasClass('mobile-nav-active')) {
+  //         $('body').removeClass('mobile-nav-active');
+  //         $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+  //         $('.mobile-nav-overly').fadeOut();
+  //       }
+  //       return false;
+  //     }
+  //   }
+  // });
 
   // Activate smooth scroll on page load with hash links in the url
   $(document).ready(function() {
@@ -115,6 +115,7 @@
         main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
       }
       if (cur_pos < 300) {
+        main_nav.find('li').removeClass('active');
         $(".nav-menu ul:first li:first").addClass('active');
       }
     });
@@ -148,7 +149,7 @@
   $('.back-to-top').click(function() {
     $('html, body').animate({
       scrollTop: 0
-    }, 1500, 'easeInOutExpo');
+    }, 0, 'easeInOutExpo');
     return false;
   });
 
@@ -196,16 +197,28 @@
 
   // Before and after slider
 
-  const sliderContainer1 = document.querySelector('.slidercontainer-1');
+  const sliderContainer1 = document.querySelector('#slidercontainer-1');
 
-  document.querySelector('.slider-1').addEventListener('input', (e) => {
+  document.querySelector('#slider-1').addEventListener('input', (e) => {
     sliderContainer1.style.setProperty('--position', `${e.target.value}%`)
   })
 
-  const sliderContainer2 = document.querySelector('.slidercontainer-2');
+  const sliderContainer2 = document.querySelector('#slidercontainer-2');
 
-  document.querySelector('.slider-2').addEventListener('input', (e) => {
+  document.querySelector('#slider-2').addEventListener('input', (e) => {
     sliderContainer2.style.setProperty('--position', `${e.target.value}%`)
+  })
+
+  const sliderContainer3 = document.querySelector('#slidercontainer-3');
+
+  document.querySelector('#slider-3').addEventListener('input', (e) => {
+    sliderContainer3.style.setProperty('--position', `${e.target.value}%`)
+  })
+
+  const sliderContainer4 = document.querySelector('#slidercontainer-4');
+
+  document.querySelector('#slider-4').addEventListener('input', (e) => {
+    sliderContainer4.style.setProperty('--position', `${e.target.value}%`)
   })
 
 })(jQuery);

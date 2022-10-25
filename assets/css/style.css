@@ -15,6 +15,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -29,12 +30,6 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  :root {
-    scroll-behavior: auto;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -731,18 +726,14 @@ section {
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
     --position: 50%;
-    max-width: 500px;
+    max-width: 335px;
     border: solid;
-  }
-  
-  .slidercontainer-2 {
-    margin-top: 5%;
+    height: 250px; /* Change to adjust height of frame */
   }
   
   .image-container {
     max-height: 90vh;
-    min-height: 60vh;
-    min-width: 500px;
+    min-width: 360px; /* Change to adjust 'zoom' of picture */
     width: 100%;
   }
   
@@ -762,6 +753,10 @@ section {
   
   .image-after {
     position: relative;
+  }
+
+  #slidercontainer-2, #slidercontainer-4 {
+    margin-top: 50px;
   }
 }
 
@@ -783,18 +778,15 @@ section {
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
     --position: 50%;
-    max-width: 750px;
+    max-width: 630px;
     border: solid;
-  }
-  
-  .slidercontainer-2 {
-    margin-top: 5%;
+    height: auto;
   }
   
   .image-container {
     max-height: 90vh;
-    min-height: 60vh;
-    min-width: 750px;
+    min-height: 35vh;
+    min-width: 625px;
     width: 100%;
   }
   
@@ -814,6 +806,16 @@ section {
   
   .image-after {
     position: relative;
+  }
+
+  #slidercontainer-1, #slidercontainer-3 {
+    margin-right: 50px;
+    margin-top: 0;
+  }
+
+  #slidercontainer-2, #slidercontainer-4 {
+    margin-left: 50px;
+    margin-top: 0;
   }
 }
 
