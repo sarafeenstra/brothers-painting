@@ -605,9 +605,9 @@ section {
   margin-top: 20px;
 }
 
-@media (min-width: 992px) {
-  .individual-services-card-interior {
-    margin-bottom: 24px;
+@media (max-width: 768px) {
+  #detailed-doc {
+    text-align: center;
   }
 }
 
@@ -631,13 +631,22 @@ section {
   margin-bottom: 5px;
 }
 
-.about-paragraph {
-  column-count: 2;
-  column-gap: 30px;
-  text-align: justify;
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about-paragraph {
+    column-count: 2;
+    column-gap: 30px;
+    text-align: justify;
+  }  
 }
 
-.about .content h3 {
+@media (min-width: 1440px) {
+  .about-paragraph {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+/* .about .content h3 {
   font-weight: 600;
   font-size: 26px;
 }
@@ -663,7 +672,7 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Meet the team
@@ -687,6 +696,15 @@ section {
   color: #0c0c0c;
   align-items: center;
   font-size: larger;
+}
+
+@media (max-width: 425px) {
+  .team-photo {
+    margin-bottom: 10px;
+  }
+  .team-bio {
+    text-align: center;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -938,7 +956,7 @@ section {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
+  background: #d0d9e08b;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -996,33 +1014,56 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #cc1616;
+  background: #fff;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color: black;
   transition: 0.4s;
+  border-radius: 2%;
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  -ms-border-radius: 2%;
+  -o-border-radius: 2%;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #e82d2d;
+  background: #5f8195;
+  color: #fff;
+
 }
 
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
-  }
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
   100% {
     transform: rotate(360deg);
-  }
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
 }
 
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
-  }
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
   100% {
     transform: rotate(360deg);
-  }
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
 }
 
 /*--------------------------------------------------------------
@@ -1038,7 +1079,7 @@ section {
   padding: 60px 0 30px 0;
 }
 
-#footer .footer-top .footer-info {
+/* #footer .footer-top .footer-info {
   margin-bottom: 15px;
   background: #5f8195;
   color: #fff;
@@ -1183,7 +1224,7 @@ section {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
-}
+} */
 
 /* Below is stuff from template that I don't use */
 
