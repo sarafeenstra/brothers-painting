@@ -7,6 +7,14 @@
 * Lighter blue: #819bab
 * Navbar background color: #d0d9e0
 * Span color/Hover nav bar: #d0d9e08b
+
+Gradient with 6 steps (white to BP blue):
+1. #FFF
+2. #dee5e9 (Services card body color: #f8fafb)
+3. #becbd3
+4. #9eb2be
+5. #7e99a9
+6. #5f8195
 */
 
 /*--------------------------------------------------------------
@@ -504,10 +512,11 @@ section {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(/assets/img/pexels-sorapong-chaipanya-4530762.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(/assets/img/pexels-rodnae-productions-7464643.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
+  text-align: center;
 }
 
 #logo-big-box {
@@ -524,6 +533,10 @@ section {
   /* margin-right: 30px; */
 }
 
+.text-hero {
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
 
 /* #hero-unknown:before {
   content: "";
@@ -552,6 +565,7 @@ section {
   padding: 10px 28px;
   transition: 0.5s;
   color: black;
+  margin-top: 10px;
   background: white;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -571,40 +585,15 @@ section {
   }
 }
 
-@media (max-width: 768px) {
-  #hero {
-    text-align: center;
+@media (max-width: 320px) {
+  .text-hero .hero-header {
+    font-size: 24px;
   }
-  #hero .container {
-    padding-top: 40px;
-  }
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-  #hero a {
-    text-align: center;
-    position: relative;
-  }
-}
-
-@media (min-width: 768px) {
-  .logo-big-hero {
-    text-align: end;
-  }  
 }
 
 @media (max-width: 425px) {
-  .logo-big-box {
-    margin-bottom: -200px;
-  }
-  .text-hero {
-    margin-top: -400px;
+  #hero {
+    background-image: url(/assets/img/small-screen-bg/pexels-labskiii-9066679.jpg);
   }
 }
 
@@ -612,26 +601,26 @@ section {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background-color: #f8fafb;
+  background-color: #dee5e9;
   margin-bottom: -40px;
 }
 
-.card-parent {
+.card-parent .card-body {
   border: none;
-  background-color: #f8fafb;
-}
-
-.card-body .card-title {
+  background-color: #dee5e9;
   color: #5f8195;
 }
 
-.card-body .card-text {
+/* .card-body .card-text {
   color: black;
-}
+} */
 
 #individual-services-card {
   width: 18rem;
   margin-bottom: 20px;
+  color: #5f8195;
+  background-color: #f8fafb;
+  text-align: center;
 }
 
 #detailed-doc {
@@ -658,7 +647,7 @@ section {
 --------------------------------------------------------------*/
 #about {
   color: #0c0c0c;
-  background-color: #d8e1e6;
+  background-color: #becbd3;
 }
 
 #about-title {
@@ -757,7 +746,7 @@ section {
   /* display: grid;
   place-items: center;
   min-height: 100vh; */
-  background-color: #9ab0bc;
+  background-color: #9eb2be;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -933,10 +922,10 @@ section {
 } */
 
 /*--------------------------------------------------------------
-# Contact
+# Quote Contact
 --------------------------------------------------------------*/
 #contact {
-  background-color: #7d98a8;
+  background-color: #7e99a9;
 }
 
 .contact .info-box {
