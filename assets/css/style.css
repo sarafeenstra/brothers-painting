@@ -606,7 +606,7 @@ section {
 }
 
 .card-parent .card-body {
-  border: none;
+  border: transparent;
   background-color: #dee5e9;
   color: #5f8195;
 }
@@ -621,6 +621,8 @@ section {
   color: #5f8195;
   background-color: #f8fafb;
   text-align: center;
+  border: solid;
+  border-color: white;
 }
 
 #detailed-doc {
@@ -749,8 +751,58 @@ section {
   background-color: #9eb2be;
 }
 
-/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 320px) { 
+  .slider-image {
+    display: block;
+    max-width: 100%;
+  }
+  
+  .slidercontainer {
+    display: grid;
+    place-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    --position: 50%;
+    max-width: 300px;
+    border: solid;
+    height: 250px; /* Change to adjust height of frame */
+  }
+  
+  .image-container {
+    max-height: 90vh;
+    min-width: 360px; /* Change to adjust 'zoom' of picture */
+    width: 100%;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+  
+  .image-before {
+    position: absolute;
+    inset: 0;
+    width: var(--position);
+    z-index: 1;
+  }
+  
+  .image-after {
+    position: relative;
+  }
+
+  #slidercontainer-2, #slidercontainer-4 {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 375px) { 
   .slider-image {
     display: block;
     max-width: 100%;
@@ -801,7 +853,6 @@ section {
   }
 }
 
-/* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .slider-image {
     display: block;
@@ -859,8 +910,6 @@ section {
     margin-top: 0;
   }
 }
-
-
 
 .slider {
   position: absolute;
