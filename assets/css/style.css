@@ -23,7 +23,7 @@ Gradient with 6 steps (white to BP blue):
 body {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
-  scroll-behavior: smooth;
+  /*scroll-behavior: smooth;*/
 }
 
 a {
@@ -423,17 +423,16 @@ section {
 
 .mobile-nav {
   position: fixed;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 100%;
   z-index: 9999;
   overflow-y: auto;
-  background: #fff;
+  background: #5f8195;
   transition: ease-in-out 0.2s;
   opacity: 0;
   visibility: hidden;
-  border-radius: 10px;
   padding: 10px 0;
 }
 
@@ -446,10 +445,11 @@ section {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #191919;
+  color: #fff;
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
+  font-size: 20px;
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
@@ -492,7 +492,7 @@ section {
   background: rgba(0, 0, 0, 0.6);
   overflow: hidden;
   display: none;
-  transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.5s;
 }
 
 .mobile-nav-active {
@@ -502,6 +502,7 @@ section {
 .mobile-nav-active .mobile-nav {
   opacity: 1;
   visibility: visible;
+  left: 25%;
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
@@ -512,7 +513,7 @@ section {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(/assets/img/pexels-rodnae-productions-7464643.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(../img/pexels-rodnae-productions-7464643.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -593,7 +594,7 @@ section {
 
 @media (max-width: 425px) {
   #hero {
-    background-image: url(/assets/img/small-screen-bg/pexels-labskiii-9066679.jpg);
+    background-image: url(../img/small-screen-bg/pexels-labskiii-9066679.jpg);
   }
 }
 
@@ -668,6 +669,10 @@ section {
   .about-paragraph {
     margin-left: 50px;
     margin-right: 50px;
+  }
+
+  .slidercontainer {
+    margin-top: 0 !important;
   }
 }
 
@@ -898,16 +903,6 @@ section {
   
   .image-after {
     position: relative;
-  }
-
-  #slidercontainer-1, #slidercontainer-3 {
-    margin-right: 50px;
-    margin-top: 0;
-  }
-
-  #slidercontainer-2, #slidercontainer-4 {
-    margin-left: 50px;
-    margin-top: 0;
   }
 }
 
@@ -1149,6 +1144,10 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
+}
+
+#footer a {
+  color: white;
 }
 
 /* #footer .footer-top .footer-info {
