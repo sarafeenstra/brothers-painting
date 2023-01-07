@@ -16,6 +16,24 @@
     }
   });
 
+  // Scroll to top of section/div
+
+  // $('.scrolltoServices').click(function() {
+  //   $('html, body').animate({scrollTop: $('#services').offset().top -50 }, 'slow');
+  // });
+
+  // $('.scrolltoAbout').click(function() {
+  //   $('html, body').animate({scrollTop: $('#about').offset().top -50 }, 'slow');
+  // });
+
+  // $('.scrolltoShowcase').click(function() {
+  //   $('html, body').animate({scrollTop: $('#showcase').offset().top -50 }, 'slow');
+  // });
+
+  // $('.scrolltoContact').click(function() {
+  //   $('html, body').animate({scrollTop: $('#contact').offset().top -50 }, 'slow');
+  // });
+
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 1;
   // $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {

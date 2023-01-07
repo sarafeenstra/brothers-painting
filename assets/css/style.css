@@ -604,6 +604,7 @@ section {
 #services {
   background-color: #dee5e9;
   margin-bottom: -40px;
+  padding-top: 100px;
 }
 
 .card-parent .card-body {
@@ -651,6 +652,7 @@ section {
 #about {
   color: #0c0c0c;
   background-color: #becbd3;
+  padding-top: 100px;
 }
 
 #about-title {
@@ -754,6 +756,7 @@ section {
   place-items: center;
   min-height: 100vh; */
   background-color: #9eb2be;
+  padding-top: 100px;
 }
 
 @media (min-width: 320px) { 
@@ -970,6 +973,7 @@ section {
 --------------------------------------------------------------*/
 #contact {
   background-color: #7e99a9;
+  padding-top: 100px;
 }
 
 .contact .info-box {
