@@ -43,10 +43,12 @@ class PHP_Email_Form {
 
   public function __construct() {
     $this->mailer = "forms@" . @preg_replace('/^www\./','', $_SERVER['SERVER_NAME']);
+    //$this->mailer = "forms@brotherspainting.com";
   }
 
   public function add_message($content, $label = '', $length_check = false) {
-    $message = filter_var($content, FILTER_SANITIZE_STRING) . '<br>';
+    //$message = filter_var($content, FILTER_SANITIZE_STRING) . '<br>';
+    $message = htmlspecialchars($content) . '<br>';
     if( $length_check ) {
       if( strlen($message) < $length_check + 4 ) {
         $this->error .=  $label . ' ' . $this->error_msg['short'] . '<br>';
@@ -98,10 +100,14 @@ class PHP_Email_Form {
       }
     }
 
-    $to = filter_var( $this->to, FILTER_VALIDATE_EMAIL);
-    $from_name = filter_var( $this->from_name, FILTER_SANITIZE_STRING);
-    $from_email = filter_var( $this->from_email, FILTER_VALIDATE_EMAIL);
-    $subject = filter_var( $this->subject, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+    //$to = filter_var( $this->to, FILTER_VALIDATE_EMAIL);
+    //$from_name = filter_var( $this->from_name, FILTER_SANITIZE_STRING);
+    //$from_email = filter_var( $this->from_email, FILTER_VALIDATE_EMAIL);
+    //$subject = filter_var( $this->subject, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+    $to = htmlspecialchars($this->to);
+    $from_name = htmlspecialchars($this->from_name);
+    $from_email = htmlspecialchars($this->from_email);
+    $subject = htmlspecialchars($this->subject);
     $message = nl2br($this->message);
 
     if( ! $to || md5($to) == '496c0741682ce4dc7c7f73ca4fe8dc5e') 
