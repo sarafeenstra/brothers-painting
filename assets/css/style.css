@@ -634,10 +634,10 @@ section {
   border-color: white;
 }
 
-#detailed-doc {
+/* #detailed-doc {
   color: #0c0c0c;
   margin-top: 20px;
-}
+} */
 
 @media (max-width: 768px) {
   #detailed-doc {
@@ -764,6 +764,10 @@ section {
   min-height: 100vh; */
   background-color: #9eb2be;
   padding-top: 100px;
+}
+
+.showcase-photo {
+  max-width: 450px;
 }
 
 @media (min-width: 320px) { 
