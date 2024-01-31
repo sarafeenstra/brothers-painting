@@ -513,7 +513,7 @@ section {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(../img/pexels-rodnae-productions-7464643.jpg);
+  background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.32)), url(../img/Kitchen\ for\ Web\ site.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -537,6 +537,7 @@ section {
 .text-hero {
   margin-bottom: 50px;
   text-transform: uppercase;
+  color: #000;
 }
 
 /* #hero-unknown:before {
@@ -587,14 +588,20 @@ section {
 }
 
 @media (max-width: 320px) {
-  .text-hero .hero-header {
-    font-size: 24px;
+  .text-hero {
+    font-size: 27px;
   }
 }
 
 @media (max-width: 425px) {
   #hero {
-    background-image: url(../img/small-screen-bg/pexels-labskiii-9066679.jpg);
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.50)), url(../img/Kitchen\ for\ Web\ site.jpg);
+  }
+  #logo-big-hero {
+    margin-top: 30px;
+  }
+  .text-hero {
+    font-size: 30px;
   }
 }
 
