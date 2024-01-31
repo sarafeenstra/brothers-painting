@@ -10,9 +10,9 @@ $email= $_POST['email'];
 $message= $_POST['message'];
 
 // The email address that will receive the messages
-$to = "sarabartelsfeenstra@gmail.com";
+$to = "gowiththebros@hotmail.com";
 $subject = $_POST['subject'];
-$headers = "From: gowiththebros@hotmail.com";
+$headers = "From: contactform@brotherspainting.com";
  
 // The following text will be sent
 // Name = user entered name
@@ -24,11 +24,11 @@ $txt ="Name = ". $name . "\r\nEmail = " . $email . "\r\nMessage = " . $message;
 if($email != NULL) {
     // Send email and redirect
     if(mail($to, $subject, $txt, $headers)) {
-      echo "Succes!";  
+      echo "Message sent!";  
       //header("Location:index.html?formSent=true");
     } else {
         //header("Location:index.html");
-      echo "Not so succes!";  
+      echo "Something went wrong, please contact us at gowiththebros@hotmail.com";  
     }
 }
 ?>
