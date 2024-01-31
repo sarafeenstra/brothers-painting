@@ -28,7 +28,7 @@ if($email != NULL) {
       //header("Location:index.html?formSent=true");
     } else {
         //header("Location:index.html");
-      echo "Something went wrong, please contact us at gowiththebros@hotmail.com";  
+      echo "Something went wrong, please contact us directly by phone or email.";  
     }
 }
 ?>
