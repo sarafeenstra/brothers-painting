@@ -513,8 +513,7 @@ section {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(../img/pexels-rodnae-productions-7464643.jpg); */
-  background-image: url(../img/White\ Yellow\ Playful\ Geometric\ Blank\ A4\ Document\ Landscape\ .png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)), url(../img/pexels-rodnae-productions-7464643.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -595,8 +594,7 @@ section {
 
 @media (max-width: 425px) {
   #hero {
-    /* background-image: url(../img/small-screen-bg/pexels-labskiii-9066679.jpg); */
-    background-image: url(../img/Hero-background-image-mobile.png);
+    background-image: url(../img/small-screen-bg/pexels-labskiii-9066679.jpg);
   }
 }
 
