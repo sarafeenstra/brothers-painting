@@ -767,7 +767,13 @@ section {
 }
 
 .showcase-photo {
-  max-width: 450px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 @media (min-width: 320px) { 
