@@ -769,6 +769,8 @@ section {
 .showcase-photo {
   display: block;
   border-radius: 5px;
+  width: 80%;
+  margin: auto;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
