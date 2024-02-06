@@ -593,11 +593,11 @@ section {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
   #hero {
     background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.50)), url(../img/Kitchen\ for\ Web\ site.jpg);
   }
-  #logo-big-hero {
+  #logo-big-box {
     margin-top: 30px;
   }
   .text-hero {
@@ -769,6 +769,9 @@ section {
 .showcase-photo {
   display: block;
   border-radius: 5px;
+  border: #dee5e9;
+  border-width: 1px;
+  border-style: solid;
   width: 80%;
   margin: auto;
   -webkit-border-radius: 5px;
