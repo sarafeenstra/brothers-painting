@@ -20,6 +20,11 @@ Gradient with 6 steps (white to BP blue):
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+  width: auto!important; 
+  overflow-x: hidden!important;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -429,6 +434,7 @@ section {
   left: 100%;
   z-index: 9999;
   overflow-y: auto;
+  overflow-x: hidden!important;
   background: #5f8195;
   transition: ease-in-out 0.2s;
   opacity: 0;
@@ -453,7 +459,7 @@ section {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #506e80;
+  color: #374b57; 
   text-decoration: none;
 }
 
@@ -609,15 +615,15 @@ section {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background-color: #dee5e9;
+  background-color: #f2f5f7;
   margin-bottom: -40px;
   padding-top: 100px;
 }
 
-.card-parent .card-body {
-  border: transparent;
-  background-color: #dee5e9;
+.card-parent {
   color: #5f8195;
+  margin-bottom: 40px;
+  margin-top: 30px;
 }
 
 /* .card-body .card-text {
@@ -627,8 +633,8 @@ section {
 #individual-services-card {
   width: 18rem;
   margin-bottom: 20px;
-  color: #5f8195;
-  background-color: #f8fafb;
+  color: #fff;
+  background-color: #5f8195;
   text-align: center;
   border: solid;
   border-color: white;
@@ -658,7 +664,7 @@ section {
 --------------------------------------------------------------*/
 #about {
   color: #0c0c0c;
-  background-color: #becbd3;
+  background-color: #dee5e9;
   padding-top: 100px;
 }
 
@@ -762,7 +768,7 @@ section {
   /* display: grid;
   place-items: center;
   min-height: 100vh; */
-  background-color: #9eb2be;
+  background-color: #becbd3;
   padding-top: 100px;
 }
 
@@ -993,7 +999,7 @@ section {
 # Quote Contact
 --------------------------------------------------------------*/
 #contact {
-  background-color: #7e99a9;
+  background-color: #9eb2be;
   padding-top: 100px;
 }
 
